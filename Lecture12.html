@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Form starts here -->
+    <form action="" method="POST" enctype="multipart/form-data">
+      <label for="inputText">Input Text</label><br />
+      <input type="text" name="inputText" id="inputText" /><br />
+
+      <label for="inputNumber">Input Number</label><br />
+      <input
+        type="number"
+        name="inputNumber"
+        id="inputNumber"
+        placeholder=""
+      /><br />
+
+      <label for="inputEmail">Input Email</label><br />
+      <input
+        type="email"
+        name="inputEmail"
+        id="inputEmail"
+        placeholder="email"
+      /><br />
+
+      <label for="inputTextArea">Input More Text</label><br />
+      <textarea
+        name="inputTextArea"
+        id="inputTextArea"
+        placeholder="self information"
+      ></textarea
+      ><br />
+
+      <label>Choose Gender</label><br />
+      <input type="radio" name="Gender" id="male" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="Gender" id="female" value="female" />
+      <label for="female">Female</label>
+      <input type="radio" name="Gender" id="lgbtq" value="other" checked />
+      <label for="lgbtq">LGBTQ+</label><br />
+
+      <label for="classSelect">Choose Class</label><br />
+      <select name="class" id="classSelect">
+        <option value="11">IOT</option>
+        <option value="22">Editor</option>
+        <option value="33">Accounting</option>
+        <option value="44">Marketing</option>
+        <option value="55">Civil Engineering</option></select
+      ><br /><br />
+
+      <!-- Language Selection Form -->
+      <label for="languages">Choose Language</label><br />
+      <div id="languages">
+        <input type="checkbox" name="Language" value="English" id="english" />
+        <label for="english">English</label><br />
+
+        <input type="checkbox" name="Language" value="Thai" id="thai" />
+        <label for="thai">Thai</label><br />
+
+        <input type="checkbox" name="Language" value="Chinese" id="chinese" />
+        <label for="chinese">Chinese</label><br />
+
+        <input type="checkbox" name="Language" value="Korean" id="korean" />
+        <label for="korean">Korean</label><br />
+
+        <input type="checkbox" name="Language" value="Japanese" id="japanese" />
+        <label for="japanese">Japanese</label><br />
+      </div>
+      <br />
+
+      <!-- File Uploads -->
+      <label for="uploadImage">Upload Image</label><br />
+      <input type="file" name="file" id="uploadImage" accept="image/*" />
+      Image<br />
+
+      <label for="uploadAudio">Upload Audio</label><br />
+      <input type="file" name="file" id="uploadAudio" accept="audio/*" />
+      Audio<br />
+
+      <label for="uploadVideo">Upload Video</label><br />
+      <input type="file" name="file" id="uploadVideo" accept="video/*" />
+      Video<br />
+
+      <label for="uploadDPF">Upload DPF</label><br />
+      <input type="file" name="file" id="uploadDPF" accept="application/dpf" />
+      DPF<br />
+
+      <label for="uploadDocs">Upload Docs</label><br />
+      <input
+        type="file"
+        name="file"
+        id="uploadDocs"
+        accept=".docx,.doc,.pdf,.xlx,.csv"
+      />
+      DOCX, DOC, PDF, XLX, CSV<br />
+
+      <!-- Date and Time Picker -->
+      <label for="dateTime">Choose Date and Time</label><br />
+      <input type="datetime-local" name="dateTime" id="dateTime" /><br />
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
